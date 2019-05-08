@@ -1,0 +1,182 @@
+/* FONTS */
+
+/*
+font-family: 'Play', sans-serif;
+*/
+
+/* Reset CSS
+/* --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td,section,article {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption {
+    text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+
+/* Page styles */
+/* --------------------------------------- */
+body{
+	font-family: Verdana,arial,helvetica;
+	color: rgba(0,0,0,0.5);
+}
+a:link, a:visited {
+	color: #777;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+h1 {
+	font-size: 6em;
+	color: #F90;
+    background-color: rgba(0,0,0,0.6);
+}
+p {
+	font-size: 2em;
+	color: #f0edf2;
+    margin-bottom: 35%;
+	padding: 15px 10px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px 10px
+}
+.section {
+	text-align:center;
+}
+.intro p {
+	margin: 0 auto 35% auto;
+	font-size: 1.5em;
+	background-color: rgba(0,0,0,0.6);
+	padding: 10px;
+}
+.intro h1 {
+	font-size: 6em;
+	background-color: rgba(0,0,0,0.6);
+	color: #F90;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px; 
+            border-radius: 10px; 
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+#section0 {
+    background: url("../img/friends.jpg") no-repeat fixed top;
+    background-size: 100%;
+}
+#section1 {
+    background: url("../img/mercy.jpg") no-repeat fixed top;
+    background-size: 100%;
+}
+#section2 {
+    background: url("../img/overwatchFlag.jpg") no-repeat fixed top;
+    background-size: 100%;
+}
+#section3 {
+    background: url("../img/gameModes.jpg") no-repeat fixed top;
+    background-size: 100%;
+}
+#section4 {
+    background: url("../img/recall.jpg") no-repeat fixed top;
+    background-size: 100%;
+}
+#menu ul {
+    margin: 0;
+    list-style: none;
+    vertical-align: middle;
+    position: relative;
+}
+#menu ul li {
+    display: inline-block;
+    margin: 0 0.35em;
+    position: relative;
+    min-height: 1px;
+    line-height: 1em;
+    vertical-align: middle;
+}
+#menu ul li a {
+    border-radius: 10px;
+    color: #3a5173;
+    text-decoration: none;
+    width: auto;
+    border: 3px solid #ff9c00;
+    background-color: #ff9c00;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    line-height: 1;
+    letter-spacing: .025em;
+    font-weight: 700;
+    display: block;
+    margin-left: -1px;
+    white-space: nowrap;
+}
+#menu ul li a:hover,
+#menu ul li a:focus,
+#menu ul li a:active {
+    background-color: #4c4743;
+    color: RGBa(255, 156, 0, 0.9);
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> | Home | </title> <!-- reference point -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/anythingslider.css">
+    <link rel="stylesheet" href="css/theme-metallic.css">
+    <!-- the link below is to your current stylesheet - no need to duplicate -->
+    <link rel="stylesheet" href="css/responsive.css" media="screen">
+    <!-- you may already have this or a similar library linked below -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+</head>
+<body onload="Slider();">
+    <div id="wrapper">
+        <header>
+            <h1>The Guitar Shop</h1><!-- first reference point -->
+                <nav><!-- second reference point -->
+                    <label for="show-menu" class="show-menu">Show Menu</label><!-- add these two -->
+                    <input type="checkbox" id="show-menu" role="button">
+                    <ul id="menu"><!-- add the id to the UL! -->
+                        <li><a href="../../index.html">Home - Overwatch</a></li>
+                        <li><a href="home.html">Home - Tutorial</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Guitars</a>
+                            <ul>
+                                <li><a href="#">Acoustic</a></li>
+                                <li><a href="#">Electric</a></li>
+                                <li><a href="#">Bass</a></li>
+                                <li><a href="#">Special</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services</a>
+                            <ul>
+                                <li><a href="#">Re-string</a></li>
+                                <li><a href="#">Repairs</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Cosignment</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Information</a>
+                            <ul>
+                                <li><a href="#">Sub-Topic 1</a></li>
+                                <li><a href="#">Sub-Topic 2</a></li>
+                                <li><a href="#">Sub-Topic 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <div id="dashboard">
+            <a href="#"><img src="icons/fb.png" width="70" height="70" title="Follow on Facebook" alt=""></a>
+            <a href="#"><img src="icons/g+.png" width="70" height="70" title="Add to Circles on Google+" alt=""></a>
+            <a href="#"><img src="icons/ttr.png" width="70" height="70" title="Follow on Twitter" alt=""></a>
+            <a href="#"><img src="icons/ln.png" width="70" height="70" title="Add on LinkedIn" alt=""></a>
+            <a href="#"><img src="icons/ig.png" width="70" height="70" title="Follow on Instagram" alt=""></a>
+            <a href="#"><img src="icons/pnt.png" width="70" height="70" title="Follow on Pinterest" alt=""></a>
+            <a href="#"><img src="icons/yt.png" width="70" height="70" title="Subscribe to our YouTube Channel" alt=""></a>
+        </div>
+        <div class="anythingSlider">
+            <article class="wrapper">
+                <ul id="slider3">
+                    <li>
+                    <!-- Note this caption is before the image, all other it is after -->
+                        <div class="caption-top">
+                            Nothing like a little LP Goldtop to get you going!
+                        </div>
+                        <a href="descPage1.html"><img src="img/guitar01.jpg" alt="guitar1"></a>
+                    </li>
+                    <li>
+                        <a href="descPage2.html"><img src="img/guitar02.jpg" alt="guitar2"></a>
+                        <div class="caption-right">
+                            Acoustic blues can be so much fun!
+                        </div>
+                    </li>
+                    <li>
+                        <a href="descPage3.html"><img src="img/guitar03.jpg" alt="guitar3"></a>
+                        <div class="caption-bottom">
+                            Ebony Fretboard and brass wound Elixir strings
+                        </div>
+                    </li>
+                    <li>
+                        <a href="descPage4.html"><img src="img/guitar04.jpg" alt="guitar4"></a>
+                        <div class="caption-left">
+                            Step on up and play us a tune
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </div>
+        <aside>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+        </aside>
+        <footer>
+            <p>Copyright &copy; 2015 All Rights Reserved</p><!-- reference point -->
+            <div id="minidash">
+                <a href="#"><img src="icons/fb_sm.jpg" width="32" height="32" title="Follow on Facebook"></a>
+                <a href="#"><img src="icons/g+_sm.jpg" width="32" height="32" title="Add to Circles on Google+"></a>
+                <a href="#"><img src="icons/ttr_sm.jpg" width="32" height="32" title="Follow on Twitter"></a>
+                <a href="#"><img src="icons/ln_sm.jpg" width="32" height="32" title="Add on LinkedIn"></a>
+                <a href="#"><img src="icons/ig_sm.jpg" width="32" height="32" title="Follow on Instagram"></a>
+                <a href="#"><img src="icons/pnt_sm.jpg" width="32" height="32" title="Follow on Pinterest"></a>
+                <a href="#"><img src="icons/yt_sm.jpg" width="32" height="32" title="Subscribe to our YouTube Channel"></a>
+            </div>
+        </footer><!-- reference point -->
+    </div>
+
+<script src="js/jquery.anythingslider.min.js"></script> <!-- this is the main slider plugin -->
+<script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/mediaMenu.js"></script>
+
+</body>
+</html>

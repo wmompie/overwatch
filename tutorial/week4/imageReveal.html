@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>| jQuery Image Hover |</title>
+    <style type="text/css">
+        body {
+            font: 100% Verdana;
+        }
+        .separate {
+            line-height: 1.8em;
+            border-bottom: 1px solid black;
+        }
+        .container1 {
+            position: relative;
+            max-width: 800px;
+            height: 500px;
+            border: 1px solid black;
+            overflow: hidden;
+            margin-left: 20px;
+        }
+        .box1 {
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            width: 700px;
+            height: auto;
+            padding: 5px;
+            text-align: center;
+        }
+        .box2 {
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            width: 700px;
+            height: auto;
+            padding: 5px;
+            text-align: center;
+        }
+        .box1 img {
+            padding-top: 5px;
+            max-width: 100%;
+        }
+        .box2 img {
+            padding-top: 5px;
+            max-width: 100%;
+        }
+        nav {
+            position: relative;
+            top: 10.5%;
+        }
+        nav ul {
+            margin: 0;
+            list-style: none;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 0.35em;
+            position: relative;
+            float: left;
+        }
+        nav ul li a {
+            font-size: 110%;
+            display: block;
+            border-radius: 8px 8px 0 0;
+            color: #e1e2dd;
+            text-decoration: none;
+            padding: 0.6em 1.2em; 
+            background-color: #483838;
+            margin-left: -1px;
+            white-space: nowrap;
+            outline: 0;
+        }
+        nav ul li a:hover,
+        nav ul li a:focus,
+        nav ul li a:active {
+            background-color: #e1e2dd;
+            color: #483838;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.container1').hover(function() {
+                $('.box1').stop().animate( {
+                    left: '850'
+                },
+                1000,
+                'easeInCubic'); // end animate
+            },
+            function() {
+                $('.box1').stop().animate({
+                    left: '20'
+                },
+                1000,
+                'easeOutBounce'); // end animate
+            }); //end hover
+        }); // end ready
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home - Overwatch</a></li>
+            <li><a href="home.html">Home - Tutorial</a></li>
+        </ul>
+    </nav>
+    <h2 class="separate">Image Hover</h2>
+    <div class="container1">
+        <div class="box2"><img src="img/guitar_ig.jpg" alt="guitar_ig"></div>
+        <div class="box1"><img src="img/guitar04.jpg" alt="guitar04"></div>
+    </div>
+</body>
+</html>

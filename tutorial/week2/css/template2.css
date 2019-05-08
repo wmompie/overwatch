@@ -1,0 +1,167 @@
+body, p, header, aside, section, article,
+h1, h2, h3, nav, div, footer {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #252122;
+    font: 100% Verdana;
+}
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    background-image: url(../img/bg01.png);
+}
+p {
+    margin-bottom: 1.2em;
+}
+header {
+    text-align: center;
+    background-color: #b49898;
+    height: 200px;
+}
+header h1 {
+    color: #252122;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+aside {
+    max-width: 200px;
+    float: left;
+    min-height: 600px;
+    color: #b49898;
+    background-color: #483838;
+}
+aside p {
+    padding: 0px 20px;
+}
+section {
+    padding: 10px;
+    float: left;
+    max-width: 65%;
+}
+article p {
+    padding-left: 1.5em;
+}
+footer {
+    clear: both;
+    background-color: #b49898;
+    text-align: center;
+    font-size: 85%;
+    min-height: 100px;
+}
+footer p {
+    padding-top: 3%;
+}
+nav {
+    margin-left: 200px; /* matches the width of the left sidebar */
+    position: relative;
+    top: 34.5%; /* sets the bottom of the anchor at the top of the section */
+}
+nav ul {
+    margin: 0;
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 0.35em;
+    position: relative;
+    float: left;
+}
+nav ul li ul {
+    display: none;
+}
+nav ul li a {
+    font-size: 110%;
+    display: block;
+    border-radius: 8px 8px 0 0; /* dog-ears the top, flattens the bottom */
+    color: #e1e2dd;
+    text-decoration: none;
+    padding: 0.6em 1.2em; 
+    background-color: #483838;
+    margin-left: -1px; /* pull them in close! */
+    white-space: nowrap; /* doesn't let long menu selections fall to the next line - messes with the display */
+    outline: 0; /* some browsers will outline a link - this does not allow it to */
+}
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+    background-color: #e1e2dd;
+    color: #483838;
+}
+nav li:hover ul,
+nav li.hover ul {
+    display: block;
+    position: absolute;
+    float: none;
+    margin-left: -45px;
+}
+nav ul li:hover ul a,
+nav ul li.hover ul a {
+    background-color: #483838;
+    color: #e1e2dd;
+    width: 130px; /* this is what makes a uniform sub-menu display */
+    border-radius: 0;
+    text-align: left;
+    padding-left: 0.6em;
+}
+nav ul li:hover ul a:hover,
+nav ul li.hover ul a:hover,
+nav ul li.hover ul a:focus,
+nav ul li.hover ul a:active {
+    background-color: #e1e2dd;
+    color: #483838;
+}
+.cols {
+    /*-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;*/
+    -webkit-column-width: 200px;
+    -moz-column-width: 200px;
+    column-width: 200px;
+}
+.cols-span {
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+    line-height: 1.2em;
+}
+.cols p {
+    margin-bottom: 1.1em;
+    text-align: justify;
+}
+.lead {
+    font-family: Georgia;
+    font-size: 1.3em;
+    text-align: left;
+    font-style: italic;
+}
+.rgt {
+    float: right;
+    max-width: 30%;
+}
+img {
+    padding: 0.3em;
+}
+.spec {
+    margin: -5px 0 10px 0;
+    border-bottom: 1px solid #483838;
+    line-height: 0;
+}
+.ads {
+    float: right;
+    text-align: center;
+    font-size: 90%;
+    color: #b49898;
+    background-color: #483838;
+}
+.ads p {
+    padding-top: 0.3em;
+}

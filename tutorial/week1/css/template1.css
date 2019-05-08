@@ -1,0 +1,74 @@
+body, p, header, aside, section, article, h1, h2, h3, nav, div, footer {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #252122;
+    font: 100% Verdana;
+}
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+p {
+    margin-bottom: 1.2em;
+}
+header {
+    text-align: center;
+    background-color: #b49898;
+    height: 200px;
+}
+header h1 {
+    color: #252122;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+aside {
+    max-width: 200px;
+    float: left;
+    min-height: 600px;
+    color: #b49898;
+    background-color: #483838;
+}
+aside p {
+    padding: 0px 20px;
+}
+section {
+    padding: 10px;
+    float: left;
+    max-width: 65%;
+}
+article p {
+    padding-left: 1.5em;
+}
+footer {
+    clear: both;
+    background-color: #b49898;
+    text-align: center;
+    font-size: 85%;
+    min-height: 100px;
+}
+footer p {
+    padding-top: 3%;
+}
+nav ul {
+    margin: 0;
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 0.35em;
+}
+nav ul li ul {
+    display: none;
+}
+nav ul li a {
+    border-radius: 5px;
+    color: #e1e2dd;
+    text-decoration: none;
+    padding: 0.6em 1.2em;
+    background-color: #483838;
+    outline: 0;
+}

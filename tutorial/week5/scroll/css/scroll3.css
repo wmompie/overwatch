@@ -1,0 +1,137 @@
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td,section,article {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption {
+    text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+/* Page styles
+ * --------------------------------------- */
+body{
+	font-family: Verdana,arial,helvetica;
+	color: rgba(0,0,0,0.5);
+}
+a:link, a:visited {
+	color: #777;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+h1 {
+	font-size: 6em;
+	color: #F90;
+    background-color: rgba(0,0,0,0.6);
+}
+p {
+	font-size: 2em;
+	color: #1a72cb;
+    margin-bottom: 35%;
+	padding: 15px 10px;
+    background-color: rgba(0,0,0,0.6);
+    padding: 15px 10px
+}
+.section {
+	text-align:center;
+}
+.intro p {
+	margin: 0 auto 35% auto;
+	font-size: 1.5em;
+	color: #c90;
+	background-color: rgba(0,0,0,0.6);
+	padding: 10px;
+}
+.intro h1 {
+	font-size: 6em;
+	background-color: rgba(0,0,0,0.6);
+	color: #F90;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px; 
+            border-radius: 10px; 
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+#section0 {
+    background: url("../images/01.jpg") no-repeat fixed top;
+    background-size: 110%;
+}
+#section1 {
+    background: url("../images/08.jpg") no-repeat fixed top;
+    background-size: 100%;
+}
+#section2 {
+    background: url("../images/03.jpg") no-repeat fixed top;
+    background-size: 100%;
+}
+#section3 {
+    background: url("../images/06.jpg") no-repeat fixed top;
+    background-size: 100%;
+}
+#section4 {
+    background: url("../images/02.jpg") no-repeat fixed top;
+    background-size: 100%;
+}

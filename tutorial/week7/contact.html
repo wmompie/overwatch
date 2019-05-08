@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> | Contact | </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <style type="text/css">
+        form {
+            border: 1px solid brown;
+            max-width: 500px;
+        }
+        input {
+            margin-left: 20px;
+            width: 250px;
+            border-radius: 5px;
+        }
+        input[type="tel"] {
+            width: 48px;
+        }
+        .shortmargin {
+            margin-left: 7px;
+        }
+        .adj {
+            margin-left: 20px;
+            width: 250px;
+            border-radius: 5px;
+            box-shadow: -1px 0 1px rbga(0,0,0,0.6);
+        }
+        input[type="radio"] {
+            width: 30px;
+        }
+        input, textarea, select {
+            margin-top: 7px;
+            padding: 3px;
+        }
+        .err {
+            font-style: italic;
+            color: red;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>The Guitar Shop</h1><!-- first reference point -->
+                <nav><!-- second reference point -->
+                    <label for="show-menu" class="show-menu">Show Menu</label><!-- add these two -->
+                    <input type="checkbox" id="show-menu" role="button">
+                    <ul id="menu"><!-- add the id to the UL! -->
+                        <li><a href="../../index.html">Home - Overwatch</a></li>
+                        <li><a href="home.html">Home - Tutorial</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Guitars</a>
+                            <ul>
+                                <li><a href="#">Acoustic</a></li>
+                                <li><a href="#">Electric</a></li>
+                                <li><a href="#">Bass</a></li>
+                                <li><a href="#">Special</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services</a>
+                            <ul>
+                                <li><a href="#">Re-string</a></li>
+                                <li><a href="#">Repairs</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Cosignment</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Information</a>
+                            <ul>
+                                <li><a href="#">Sub-Topic 1</a></li>
+                                <li><a href="#">Sub-Topic 2</a></li>
+                                <li><a href="#">Sub-Topic 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <section>
+            <article>
+                <h2>Contact Us&#33;</h2>
+                <p id="fn1Msg">We welcome your comments and would love the opportunity to help you choose the right instrument for your style. Please find our address and hours below. If you would like to correspond with our knowledgeable staff, or if you would like to receive our newsletter, fill in the form with your contact information and preferences. We can&#39;t wait to hear from you&#33;</p>
+                <p></p>
+            </article>
+            <h3 class="spec"></h3>
+            <article id="contactForm">
+                <h2>Contact Form</h2>
+                <p class="lead">Please fill in the information below&#33;</p>
+                <form method="post" action="" name="form1">
+                    <p>First Name&#58; <br>
+                        <input type="text" name="fname" placeholder=" first name"><br>
+                        <span class="err" id="fnErr"></span>
+                    </p>
+                    <p>Last Name&#58; <br>
+                        <input type="text" name="lname" placeholder=" last name"><br>
+                        <span class="err" id="lnErr"></span>
+                    </p>
+                    <p>Email&#58; <br>
+                        <input type="text" name="email" placeholder=" you@youremail.com"><br>
+                        <span class="err" id="emErr"></span>
+                    </p>
+                    <p>
+                        <input type="tel" name="phone1" placeholder=" xxx" maxlength="3">
+                        <input type="tel" name="phone2" placeholder=" xxx" maxlength="3" class="shortmargin">
+                        <input type="tel" name="phone3" placeholder=" xxxx" maxlength="4" class="shortmargin"><br>
+                        <span class="err" id="phErr"></span>
+                    </p>
+                    <p>Comments&#58; <br>
+                        <textarea name="comments" placeholder=" add your comments" class="adj"></textarea><br>
+                        <span class="err" id="cmErr"></span>
+                    </p>
+                    <p>Please tell us about your preferences&#58;</p>
+                    <p>I most often play&#58;<br>
+                        <span id="gtErr" class="err"></span>
+                        <select id="guitarType" class="adj">
+                            <option>&#45;&#45; Please Select &#45;&#45;</option>
+                            <option>Acoustic</option>
+                            <option>Electric</option>
+                            <option>Amped Acoustic</option>
+                            <option>PA &#40;Miked&#41; Acoustic</option>
+                            <option>Combination PA and Amp</option>
+                        </select>
+                    </p>
+                    <p>I am interested in&#58;<br>
+                        <span id="inErr" class="err"></span>
+                        <select id="interest" class="adj">
+                            <option>&#45;&#45; Please Select &#45;&#45;</option>
+                            <option>Guitar</option>
+                            <option>Amps</option>
+                            <option>Public Address</option>
+                            <option>Other Equipment</option>
+                            <option>Lessons</option>
+                        </select>
+                    </p>
+                    <p>Would you like to receive notifications via email&#63;<br>
+                        <span class="err" id="notePref"></span>
+                        <input type="radio" name="notices" value="yes">&#58; Yes&#33;
+                        <input type="radio" name="notices" value="maybe">&#58; Not Yet.
+                        <input type="radio" name="notices" value="no">&#58; No Thanks.
+                    </p>
+                    <p>
+                        <input type="button" value="Send Information" onclick="validForm()">
+                    </p>
+                </form>
+            </article>
+        </section>
+        <aside>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+        </aside>
+        <footer>
+            <p>Copyright &copy; 2015 All Rights Reserved</p>
+            <div id="minidash">
+                <a href="#"><img src="icons/fb_sm.jpg" width="32" height="32" title="Follow on Facebook"></a>
+                <a href="#"><img src="icons/g+_sm.jpg" width="32" height="32" title="Add to Circles on Google+"></a>
+                <a href="#"><img src="icons/ttr_sm.jpg" width="32" height="32" title="Follow on Twitter"></a>
+                <a href="#"><img src="icons/ln_sm.jpg" width="32" height="32" title="Add on LinkedIn"></a>
+                <a href="#"><img src="icons/ig_sm.jpg" width="32" height="32" title="Follow on Instagram"></a>
+                <a href="#"><img src="icons/pnt_sm.jpg" width="32" height="32" title="Follow on Pinterest"></a>
+                <a href="#"><img src="icons/yt_sm.jpg" width="32" height="32" title="Subscribe to our YouTube Channel"></a>
+            </div>
+        </footer>
+    </div>
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>

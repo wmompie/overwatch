@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> | DescPage 4 | </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/slider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("nav").accessibleDropDown();
+        }); //end ready
+        $.fn.accessibleDropDown = function() {
+            var el = $(this);
+            $("a", el).focus(function() {
+                $(this).parents("li").addClass("hover");
+            }).blur(function() {
+                $(this).parents("li").removeClass("hover");
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>The Guitar Shop</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">Home - Overwatch</a></li>
+                        <li><a href="slider.html">Home - SLider</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Guitars</a>
+                            <ul>
+                                <li><a href="#">Acoustic</a></li>
+                                <li><a href="#">Electric</a></li>
+                                <li><a href="#">Bass</a></li>
+                                <li><a href="#">Special</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Services</a>
+                            <ul>
+                                <li><a href="#">Re-string</a></li>
+                                <li><a href="#">Repairs</a></li>
+                                <li><a href="#">Lessons</a></li>
+                                <li><a href="#">Cosignment</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Information</a>
+                            <ul>
+                                <li><a href="#">Sub-Topic 1</a></li>
+                                <li><a href="#">Sub-Topic 2</a></li>
+                                <li><a href="#">Sub-Topic 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <aside>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+            <p>The sidebar content</p>
+        </aside>
+        <section>
+            <article>
+                <h2>Guitar&#35;4</h2>
+                <p>All About Guitar&#35;4</p>
+                <p><img class="smImg" src="img/guitar04.jpg" alt="guitar4">Mauris eu mi euismod risus luctus luctus vel eget est. Vivamus at commodo ante. Praesent quis turpis rutrum, pellentesque elit eu, molestie ipsum. Proin efficitur lacus sit amet risus ornare faucibus. Vivamus efficitur imperdiet justo, eget aliquam dolor aliquam a. Curabitur rhoncus sed neque in accumsan. Nunc ut nisl venenatis, tincidunt orci sagittis, egestas massa.</p>
+                <p>Morbi eu ex interdum, vehicula leo lacinia, facilisis enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur lobortis lacus ut sollicitudin pulvinar. In iaculis massa aliquet sapien euismod, non convallis leo convallis. Quisque finibus orci sed metus ultrices, ac ullamcorper orci laoreet. Phasellus at nunc nec risus commodo ultrices. Cras nec tempus dui.</p>
+            </article>
+            <p class="spec"></p>
+            <article class="cols">
+                <h2 class="cols-span">Proin efficitur lacus sit amet</h2>
+                <p class="lead cols-span">Vestibulum sollicitudin diam ultricies, interdum mi nec</p>
+                <p>Praesent non nisi tincidunt, rutrum risus nec, vehicula ex. Mauris cursus, purus id imperdiet rhoncus, turpis elit bibendum sapien, pellentesque pharetra nisi tortor sed velit. Nam sed enim dolor. Nunc rhoncus purus ante, id egestas mi commodo cursus. Morbi imperdiet justo in consequat efficitur. Aliquam auctor imperdiet congue. Nulla id laoreet leo. Nullam sagittis porttitor eros nec lacinia. Vestibulum volutpat lectus enim, sed sollicitudin quam placerat non. Suspendisse bibendum, nisl quis maximus tristique, felis ipsum pulvinar nulla, at convallis arcu lacus nec lacus. Pellentesque sodales dui maximus sapien convallis tristique. Nunc mollis, ex sed sollicitudin laoreet, dui odio consectetur magna, vel gravida dolor orci eu diam.</p>
+            </article>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2016 All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
